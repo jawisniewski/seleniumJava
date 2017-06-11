@@ -33,7 +33,7 @@ public class TestJava {
         //Od wersji selenium 3.0 samo FirefoxDriver nie wystarcza
         //Należy dodać sterownik geckodriver
         //Do pobrania tutaj: https://github.com/mozilla/geckodriver/releases
-        System.setProperty("webdriver.gecko.driver", "resources/geckodriver");
+        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
