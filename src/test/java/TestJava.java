@@ -15,6 +15,8 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by Hebo on 15.05.2017.
@@ -22,6 +24,7 @@ import static org.junit.Assert.assertEquals;
 public class TestJava {
 
 
+    public PageObject pageLogin;
 
     private static WebDriver driver;
 
@@ -35,31 +38,22 @@ public class TestJava {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @Test
-    public void loginInCorrect() {
-        driver.get("http://127.0.0.1:3000/login");
-
-        WebElement login = driver.findElement(By.id("login"));
-        login.sendKeys("admin");
-        WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys("123qe");
-        WebElement btn = driver.findElement(By.id("submit"));
-        btn.click();
+    public void loginInCorrect() throws Exception {
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qe");
         assertEquals("Błedny login lub haslo", driver.findElement(By.id("notice")).getText());
     }
     @Test
-    public void loginCorrect() {
-        driver.get("http://127.0.0.1:3000/login");
+    public void loginCorrect() throws Exception {
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
+        assertTrue(pageLogin.assertLogged("Hello!"));
 
-        WebElement login = driver.findElement(By.id("login"));
-        login.sendKeys("admin");
-      WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys("123qwe");
-        WebElement btn = driver.findElement(By.id("submit"));
-                btn.click();
-                assertEquals("Hello!", driver.findElement(By.id("logged")).getText());
     }
     @Test
-    public void searchTest() {
+    public void searchTest() throws Exception {
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
         driver.get("http://127.0.0.1:3000/runs");
 
         WebElement login = driver.findElement(By.id("search"));
@@ -73,7 +67,9 @@ public class TestJava {
         assertEquals(2,tr.size());
     }
     @Test
-    public void searchInCorrectTest() {
+    public void searchInCorrectTest() throws Exception {
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
         driver.get("http://127.0.0.1:3000/runs");
 
         WebElement login = driver.findElement(By.id("search"));
@@ -87,7 +83,8 @@ public class TestJava {
         assertEquals(0,tr.size());
     }
     @Test
-    public void searchEmptyTest() {
+    public void searchEmptyTest() throws Exception{
+
         driver.get("http://127.0.0.1:3000/runs");
 
         WebElement login = driver.findElement(By.id("search"));
@@ -98,18 +95,14 @@ public class TestJava {
         WebElement tbody = driver.findElement(By.tagName("tbody"));
         List<WebElement> tr = tbody.findElements(By.tagName("tr"));
 
-        assertEquals(23,tr.size());
+        assertNotEquals(0,tr.size());
     }
     @Test
-    public void CreateRunTest() {
-        driver.get("http://127.0.0.1:3000/login");
+    public void CreateRunTest()  throws Exception{
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
+        Integer size1 = pageLogin.assertTrSize("pol-fr");
 
-        WebElement login = driver.findElement(By.id("login"));
-        login.sendKeys("admin");
-        WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys("123qwe");
-        WebElement btn = driver.findElement(By.id("submit"));
-        btn.click();
         driver.get("http://localhost:3000/runs/new");
 
         List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
@@ -121,7 +114,9 @@ public class TestJava {
         car.selectByIndex(1);
         WebElement form = driver.findElement(By.tagName("form"));
         form.submit();
-        assertEquals("Hello!", driver.findElement(By.id("logged")).getText());
+        Integer size2 = pageLogin.assertTrSize("pol-fr");
+
+        assertNotEquals(size1, size2);
     }
 //        @Test
 //        public  void test2() {
