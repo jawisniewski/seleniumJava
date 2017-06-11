@@ -11,7 +11,7 @@ public class PageObject {
 
     public WebDriver driver;
     private final Wait<WebDriver> wait;
-
+    public  List<WebElement> tr;
     public PageObject(WebDriver driver){
         this.driver = driver;
         driver.get("http://localhost:3000/login");
@@ -28,21 +28,34 @@ public class PageObject {
      ;
         WebElement btn = driver.findElement(By.id("submit"));
         btn.click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("logged")));
 
     }
 
 public  int assertTrSize (String name) throws  Exception {
+
+
     driver.get("http://127.0.0.1:3000/runs");
     wait.until(ExpectedConditions.presenceOfElementLocated(By.id("search")));
     WebElement login = driver.findElement(By.id("search"));
     login.sendKeys(name);
     driver.findElement(By.tagName("form")).submit();
     WebElement tbody = driver.findElement(By.tagName("tbody"));
-    List<WebElement> tr = tbody.findElements(By.tagName("tr"));
+    tr = tbody.findElements(By.tagName("tr"));
         return tr.size();
 }
+public  void EditRow(Integer index) throws Exception{
 
 
+   List<WebElement> elements = driver.findElements(By.className("btn-warning"));
+   elements.get(index).click();
+}
+    public  void DeleteRow(Integer index) throws Exception{
+
+
+        List<WebElement> elements = driver.findElements(By.className("btn-danger"));
+        elements.get(index).click();
+    }
     public boolean assertLogged(String title) throws Exception{
         Boolean result = driver.findElement(By.id("logged")).getText().contains(title);
 

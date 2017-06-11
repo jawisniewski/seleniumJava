@@ -2,6 +2,8 @@ import com.gargoylesoftware.htmlunit.javascript.host.Console;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,9 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Created by Hebo on 15.05.2017.
@@ -52,8 +52,7 @@ public class TestJava {
     }
     @Test
     public void searchTest() throws Exception {
-        pageLogin = new PageObject(driver);
-        pageLogin.login("admin", "123qwe");
+
         driver.get("http://127.0.0.1:3000/runs");
 
         WebElement login = driver.findElement(By.id("search"));
@@ -68,8 +67,7 @@ public class TestJava {
     }
     @Test
     public void searchInCorrectTest() throws Exception {
-        pageLogin = new PageObject(driver);
-        pageLogin.login("admin", "123qwe");
+
         driver.get("http://127.0.0.1:3000/runs");
 
         WebElement login = driver.findElement(By.id("search"));
@@ -118,6 +116,105 @@ public class TestJava {
 
         assertNotEquals(size1, size2);
     }
+    @Test
+    public void EditRunTest()  throws Exception{
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
+
+       pageLogin.EditRow(0);
+
+        List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
+        formcontrol.get(0).clear();
+        formcontrol.get(0).sendKeys("MAN TGX");
+
+
+
+        WebElement form = driver.findElement(By.tagName("form"));
+        form.submit();
+     assertEquals("Car was successfully updated.",driver.findElement(By.id("notice")).getText());
+
+
+    }
+    @Test (expected=IndexOutOfBoundsException.class)
+    public void EditFailRunTest()  throws Exception{
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
+
+        pageLogin.EditRow(30);
+
+        List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
+        formcontrol.get(0).clear();
+        formcontrol.get(0).sendKeys("MAN TGX");
+
+
+
+        WebElement form = driver.findElement(By.tagName("form"));
+        form.submit();
+        assertEquals("Car was successfully updated.",driver.findElement(By.id("notice")).getText());
+
+
+    }
+    @Test
+    public void DeleteCarTest()  throws Exception{
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
+
+        pageLogin.DeleteRow(5);
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+        assertEquals("Car was successfully destroyed.",driver.findElement(By.id("notice")).getText());
+
+
+    }
+    @Test
+    public void DeleteNotAcceptCarTest()  throws Exception{
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
+
+        pageLogin.DeleteRow(5);
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
+        assertTrue(driver.findElement(By.id("notice")).getText().equals(""));
+
+
+    }
+    @Test
+    public void FormCreateTest()  throws Exception{
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
+         driver.get("http://localhost:3000/runs/new");
+
+        List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
+        formcontrol.get(0).sendKeys("pol-fr");
+        formcontrol.get(1).sendKeys("2000");
+        formcontrol.get(2).sendKeys("2000");
+
+        Select car =  new Select (driver.findElement(By.id("run_cars_id")));
+        car.selectByIndex(1);
+        WebElement form = driver.findElement(By.tagName("form"));
+        form.submit();
+
+        assertFalse(driver.getCurrentUrl().equals("http://127.0.0.1:3000/runs/new"));
+    }
+    @Test
+    public void FormFailCreateTest()  throws Exception{
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qwe");
+        driver.get("http://localhost:3000/runs/new");
+
+        List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
+        formcontrol.get(0).sendKeys("");
+        formcontrol.get(1).sendKeys("2000");
+        formcontrol.get(2).sendKeys("2000");
+
+        Select car =  new Select (driver.findElement(By.id("run_cars_id")));
+        car.selectByIndex(1);
+        WebElement form = driver.findElement(By.tagName("form"));
+        form.submit();
+
+        assertTrue(driver.findElement(By.id("error_explanation")).findElement(By.tagName("li")).getText().equals("Name can't be blank"));
+    }
+//
 //        @Test
 //        public  void test2() {
 //            driver.get("https://google.pl/");
