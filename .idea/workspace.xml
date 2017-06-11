@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cad4e91-3ba5-4e07-ba04-10b10491cfbc" name="Default" comment="" />
+    <list default="true" id="9cad4e91-3ba5-4e07-ba04-10b10491cfbc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/OperaTest.java" afterPath="$PROJECT_DIR$/src/test/java/OperaTest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperaTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OperaTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/OperaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+            <state relative-caret-position="515">
+              <caret line="258" column="5" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="258" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EdgeTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/EdgeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="241" column="39" lean-forward="true" selection-start-line="241" selection-start-column="39" selection-end-line="241" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,16 +136,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seleniumP.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seleniumP.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -155,6 +160,7 @@
         <option value="$PROJECT_DIR$/src/test/java/TestJava.java" />
         <option value="$PROJECT_DIR$/src/test/java/MozillaTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/OperaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EdgeTest.java" />
       </list>
     </option>
   </component>
@@ -799,14 +805,11 @@
       <updated>1497128432709</updated>
       <workItem from="1497128446598" duration="831000" />
       <workItem from="1497174256169" duration="70000" />
-      <workItem from="1497174350640" duration="11662000" />
+      <workItem from="1497174350640" duration="11914000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MozillaTest - 2017.06.11 at 21h 21m 31s.xml">
-      <configuration name="MozillaTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MozillaTest - 2017.06.11 at 21h 31m 12s.xml">
       <configuration name="MozillaTest" configurationId="JUnit" />
     </history-entry>
@@ -828,6 +831,9 @@
     <history-entry file="OperaTest - 2017.06.11 at 21h 37m 30s.xml">
       <configuration name="OperaTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OperaTest - 2017.06.11 at 21h 41m 17s.xml">
+      <configuration name="OperaTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestJava_searchInCorrectTest - 2017.06.11 at 21h 27m 54s.xml">
       <configuration name="TestJava.searchInCorrectTest" configurationId="JUnit" />
     </history-entry>
@@ -836,7 +842,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12563000" />
+    <option name="totallyTimeSpent" value="12815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -852,7 +858,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1030,8 +1036,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/OperaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="515">
+          <caret line="258" column="5" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="258" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EdgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="241" column="39" lean-forward="true" selection-start-line="241" selection-start-column="39" selection-end-line="241" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -5,7 +5,6 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -18,8 +17,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by Hebo on 11.06.2017.
  */
-public class OperaTest {
-
+public class EdgeTest {
     public PageObject pageLogin;
 
     private static WebDriver driver;
