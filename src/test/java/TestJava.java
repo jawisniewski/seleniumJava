@@ -58,7 +58,71 @@ public class TestJava {
                 btn.click();
                 assertEquals("Hello!", driver.findElement(By.id("logged")).getText());
     }
+    @Test
+    public void searchTest() {
+        driver.get("http://127.0.0.1:3000/runs");
 
+        WebElement login = driver.findElement(By.id("search"));
+        login.sendKeys("pol-eng");
+
+        WebElement form = driver.findElement(By.tagName("form"));
+        form.submit();
+       WebElement tbody = driver.findElement(By.tagName("tbody"));
+       List<WebElement> tr = tbody.findElements(By.tagName("tr"));
+
+        assertEquals(2,tr.size());
+    }
+    @Test
+    public void searchInCorrectTest() {
+        driver.get("http://127.0.0.1:3000/runs");
+
+        WebElement login = driver.findElement(By.id("search"));
+        login.sendKeys("Anglia");
+
+        WebElement form = driver.findElement(By.tagName("form"));
+        form.submit();
+        WebElement tbody = driver.findElement(By.tagName("tbody"));
+        List<WebElement> tr = tbody.findElements(By.tagName("tr"));
+
+        assertEquals(0,tr.size());
+    }
+    @Test
+    public void searchEmptyTest() {
+        driver.get("http://127.0.0.1:3000/runs");
+
+        WebElement login = driver.findElement(By.id("search"));
+        login.sendKeys("");
+
+        WebElement form = driver.findElement(By.tagName("form"));
+        form.submit();
+        WebElement tbody = driver.findElement(By.tagName("tbody"));
+        List<WebElement> tr = tbody.findElements(By.tagName("tr"));
+
+        assertEquals(23,tr.size());
+    }
+    @Test
+    public void CreateRunTest() {
+        driver.get("http://127.0.0.1:3000/login");
+
+        WebElement login = driver.findElement(By.id("login"));
+        login.sendKeys("admin");
+        WebElement password = driver.findElement(By.id("password"));
+        password.sendKeys("123qwe");
+        WebElement btn = driver.findElement(By.id("submit"));
+        btn.click();
+        driver.get("http://localhost:3000/runs/new");
+
+        List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
+        formcontrol.get(0).sendKeys("pol-fr");
+        formcontrol.get(1).sendKeys("2000");
+        formcontrol.get(2).sendKeys("2000");
+
+        Select car =  new Select (driver.findElement(By.id("run_cars_id")));
+        car.selectByIndex(1);
+        WebElement form = driver.findElement(By.tagName("form"));
+        form.submit();
+        assertEquals("Hello!", driver.findElement(By.id("logged")).getText());
+    }
 //        @Test
 //        public  void test2() {
 //            driver.get("https://google.pl/");

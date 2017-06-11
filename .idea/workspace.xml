@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cad4e91-3ba5-4e07-ba04-10b10491cfbc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestJava.class" afterPath="$PROJECT_DIR$/target/test-classes/TestJava.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestJava.java" afterPath="$PROJECT_DIR$/src/test/java/TestJava.java" />
     </list>
@@ -19,13 +20,9 @@
       <file leaf-file-name="TestJava.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestJava.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="99" selection-end-column="0" />
-              <folding>
-                <marker date="1497175060148" expanded="true" signature="2182:2904" ph="{...}" />
-                <marker date="1497175060148" expanded="true" signature="2959:3435" ph="{...}" />
-                <marker date="1497175060148" expanded="true" signature="3498:3845" ph="{...}" />
-              </folding>
+            <state relative-caret-position="293">
+              <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,15 +163,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestJava.loginInCorrect">
-    <configuration default="false" name="TestJava.loginCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestJava.CreateRunTest">
+    <configuration default="false" name="TestJava.loginInCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="seleniumP" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestJava" />
-      <option name="METHOD_NAME" value="loginCorrect" />
+      <option name="METHOD_NAME" value="loginInCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -188,14 +185,77 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestJava.loginInCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="seleniumP" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestJava" />
-      <option name="METHOD_NAME" value="loginInCorrect" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestJava.searchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="seleniumP" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJava" />
+      <option name="METHOD_NAME" value="searchTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestJava.searchEmptyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="seleniumP" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJava" />
+      <option name="METHOD_NAME" value="searchEmptyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestJava.CreateRunTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="seleniumP" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJava" />
+      <option name="METHOD_NAME" value="CreateRunTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -596,14 +656,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestJava.loginCorrect" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestJava.loginInCorrect" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestJava.loginInCorrect" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestJava" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestJava.searchTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestJava.searchEmptyTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestJava.CreateRunTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestJava.loginInCorrect" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestJava.loginCorrect" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestJava.CreateRunTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestJava.searchEmptyTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestJava.searchTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestJava" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestJava.loginInCorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -619,16 +685,22 @@
       <updated>1497128432709</updated>
       <workItem from="1497128446598" duration="831000" />
       <workItem from="1497174256169" duration="70000" />
-      <workItem from="1497174350640" duration="709000" />
+      <workItem from="1497174350640" duration="2207000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestJava_loginCorrect - 2017.06.11 at 11h 47m 56s.xml">
-      <configuration name="TestJava.loginCorrect" configurationId="JUnit" />
+    <history-entry file="TestJava - 2017.06.11 at 11h 58m 11s.xml">
+      <configuration name="TestJava" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJava_loginCorrect - 2017.06.11 at 11h 48m 33s.xml">
-      <configuration name="TestJava.loginCorrect" configurationId="JUnit" />
+    <history-entry file="TestJava_CreateRunTest - 2017.06.11 at 12h 16m 26s.xml">
+      <configuration name="TestJava.CreateRunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJava_CreateRunTest - 2017.06.11 at 12h 16m 46s.xml">
+      <configuration name="TestJava.CreateRunTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJava_CreateRunTest - 2017.06.11 at 12h 21m 36s.xml">
+      <configuration name="TestJava.CreateRunTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestJava_loginInCorrect - 2017.06.11 at 11h 48m 49s.xml">
       <configuration name="TestJava.loginInCorrect" configurationId="JUnit" />
@@ -636,9 +708,21 @@
     <history-entry file="TestJava_loginInCorrect - 2017.06.11 at 11h 57m 28s.xml">
       <configuration name="TestJava.loginInCorrect" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestJava_searchEmptyTest - 2017.06.11 at 12h 06m 35s.xml">
+      <configuration name="TestJava.searchEmptyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJava_searchEmptyTest - 2017.06.11 at 12h 07m 21s.xml">
+      <configuration name="TestJava.searchEmptyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJava_searchTest - 2017.06.11 at 12h 02m 38s.xml">
+      <configuration name="TestJava.searchTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJava_searchTest - 2017.06.11 at 12h 05m 25s.xml">
+      <configuration name="TestJava.searchTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1610000" />
+    <option name="totallyTimeSpent" value="3108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -682,7 +766,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TestJava.java</url>
+          <line>104</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -694,11 +787,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="59" column="5" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <marker date="1497175060148" expanded="true" signature="2182:2904" ph="{...}" />
-            <marker date="1497175060148" expanded="true" signature="2959:3435" ph="{...}" />
-            <marker date="1497175060148" expanded="true" signature="3498:3845" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -714,11 +803,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1497175060148" expanded="true" signature="2182:2904" ph="{...}" />
-            <marker date="1497175060148" expanded="true" signature="2959:3435" ph="{...}" />
-            <marker date="1497175060148" expanded="true" signature="3498:3845" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -740,13 +825,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestJava.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <marker date="1497175060148" expanded="true" signature="2182:2904" ph="{...}" />
-            <marker date="1497175060148" expanded="true" signature="2959:3435" ph="{...}" />
-            <marker date="1497175060148" expanded="true" signature="3498:3845" ph="{...}" />
-          </folding>
+        <state relative-caret-position="293">
+          <caret line="111" column="20" lean-forward="false" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
