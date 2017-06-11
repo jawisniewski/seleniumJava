@@ -60,46 +60,8 @@ public class EdgeTest {
 
         assertNotEquals(0,tr.size());
     }
-    @Test
-    public void CreateRunTest()  throws Exception{
-        pageLogin = new PageObject(driver);
-        pageLogin.login("admin", "123qwe");
-        Integer size1 = pageLogin.assertTrSize("pol-fr");
-
-        driver.get("http://localhost:3000/runs/new");
-
-        List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
-        formcontrol.get(0).sendKeys("pol-fr");
-        formcontrol.get(1).sendKeys("2000");
-        formcontrol.get(2).sendKeys("2000");
-
-        Select car =  new Select (driver.findElement(By.id("run_cars_id")));
-        car.selectByIndex(1);
-        WebElement form = driver.findElement(By.tagName("form"));
-        form.submit();
-        Integer size2 = pageLogin.assertTrSize("pol-fr");
-
-        assertNotEquals(size1, size2);
-    }
-    @Test
-    public void EditRunTest()  throws Exception{
-        pageLogin = new PageObject(driver);
-        pageLogin.login("admin", "123qwe");
-
-        pageLogin.EditRow(0);
-
-        List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
-        formcontrol.get(0).clear();
-        formcontrol.get(0).sendKeys("MAN TGX");
 
 
-
-        WebElement form = driver.findElement(By.tagName("form"));
-        form.submit();
-        assertEquals("Car was successfully updated.",driver.findElement(By.id("notice")).getText());
-
-
-    }
     @Test (expected=IndexOutOfBoundsException.class)
     public void EditFailRunTest()  throws Exception{
         pageLogin = new PageObject(driver);
