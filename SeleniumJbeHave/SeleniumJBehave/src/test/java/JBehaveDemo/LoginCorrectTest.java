@@ -27,22 +27,25 @@ public class LoginCorrectTest {
     }
 
     @Given("poprawny login")
-    public void givenGoogleTestSite(){
-        driver.get().get("https://www.google.co.in");
-        wait = new WebDriverWait(driver.get(), 10);
+    public void givenLogin(){
+        driver.get().get("https://firmatransportowa.herokuapp.com/login");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("login")));
+
+        driver.get().findElement(By.id("login")).sendKeys("admin");
+
+        driver.get().findElement(By.id("password")).sendKeys("123qwe");
+        ;
+
     }
 
     @When("klikne na przycisk")
-    public void whenISendKeysMateuszMiotk(){
-        q = driver.get().findElement(By.name("q"));
-        q.sendKeys("Mateusz Miotk");
-        q.submit();
-        wait.until(ExpectedConditions.titleContains("Mateusz Miotk"));
+    public void whenLogin(){
+        WebElement btn = driver.get().findElement(By.id("submit"));
+        btn.submit();
     }
 
     @Then("zostane zalogowany")
-    public void thenTitleOfPageIsEqualMateuszMiotkSzukajWGoogle(){
-        assertEquals(driver.get().getTitle(), "Mateusz Miotk - Szukaj w Google");
-        driver.get().close();
+    public void thenLogged(){
+        driver.get().findElement(By.id("logged")).getText().contains("Hello!");
     }
 }

@@ -50,7 +50,7 @@ public class SearchRunTest {
         form.submit();
         WebElement tbody = driver.get().findElement(By.tagName("tbody"));
         tr = tbody.findElements(By.tagName("tr"));
-        wait.until(ExpectedConditions.titleContains("Mateusz Miotk"));
+
     }
 
     @Then("lista wynikow bedzie zawierac rekordy")

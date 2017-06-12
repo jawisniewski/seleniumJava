@@ -11,7 +11,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  * Created by Hebo on 12.06.2017.
@@ -20,30 +23,37 @@ public class SearchEmptyTest {
     private WebDriverProvider driver;
     private WebElement q;
     private Wait<WebDriver> wait;
-
+    List<WebElement> tr;
     public SearchEmptyTest(WebDriverProvider driver){
         super();
         this.driver = driver;
     }
 
-    @Given("Szukam rzeczy ktora nie istnieje")
-    public void givenGoogleTestSite(){
-        driver.get().get("https://www.google.co.in");
-        wait = new WebDriverWait(driver.get(), 10);
+    @Given("Szukam trasy $search ktora nie istnieje")
+    public void givenGoogleTestSite(String search){
+        driver.get().get("https://firmatransportowa.herokuapp.com/runs");
+
+        WebElement login = driver.get().findElement(By.id("search"));
+        login.sendKeys("pol-eng");
+
+        WebElement form = driver.get().findElement(By.tagName("form"));
+        form.submit();
+        WebElement tbody = driver.get().findElement(By.tagName("tbody"));
+        List<WebElement> tr = tbody.findElements(By.tagName("tr"));
     }
 
     @When("klikne na szukaj")
-    public void whenISendKeysMateuszMiotk(){
-        q = driver.get().findElement(By.name("q"));
-        q.sendKeys("Mateusz Miotk");
-        q.submit();
-        wait.until(ExpectedConditions.titleContains("Mateusz Miotk"));
+    public void whenSearch(){
+        WebElement form = driver.get().findElement(By.tagName("form"));
+        form.submit();
+        WebElement tbody = driver.get().findElement(By.tagName("tbody"));
+        tr = tbody.findElements(By.tagName("tr"));
+
     }
 
     @Then("lista wynikow bedzie pusta")
-    public void thenTitleOfPageIsEqualMateuszMiotkSzukajWGoogle(){
-        assertEquals(driver.get().getTitle(), "Mateusz Miotk - Szukaj w Google");
-        driver.get().close();
+    public void thenNoResult(){
+        assertEquals(0,tr.size());
     }
 }
 

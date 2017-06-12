@@ -210,45 +210,7 @@ public class ChromeTest {
 
         assertTrue(driver.findElement(By.id("error_explanation")).findElement(By.tagName("li")).getText().equals("Name can't be blank"));
     }
-//
-//        @Test
-//        public  void test2() {
-//            driver.get("https://google.pl/");
-//
-//            List<WebElement> listElements = driver.findElements(By.xpath("//a[contains(@href,'www.google.pl')]"));
-//            String[] links = new String[listElements.size()];
-//            System.out.println("Liczba linkow: " + listElements.size());
-//            for (int i = 0; i < listElements.size(); i++) {
-//                links[i] = listElements.get(i).getAttribute("href");
-//                System.out.println(listElements.get(i).getAttribute("href"));
-//            }
-//// navigate to each Link on the webpage
-//            for (int i = 0; i < listElements.size(); i++) {
-//                driver.navigate().to(links[i]);
-//
-//            }
-//        }
-//            @Test
-//            public  void test3(){
-//                driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_select_form");
-//
-//                WebElement Element = driver.findElement(By.tagName("form"));
-//               List<WebElement> ele =  Element.findElements(By.tagName("input"));
-//               for (int i =0 ; i<ele.size(); i ++) {
-//                  // ele.get(i).getAttribute("name");
-//                   System.out.println(ele.get(i).getAttribute("name"));
-//               }}
-//                @Test
-//                public  void test4(){
-//                    driver.get("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select");
-//
-//                    Select se = new Select(driver.findElement(By.name("select")));
-//                    List<WebElement> l = se.getOptions();
-//                    l.size();
-//                    System.out.println(l.size());
-//        }
-//
-//
+
 
 
     @AfterClass
