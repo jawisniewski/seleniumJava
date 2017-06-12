@@ -1,2 +1,8 @@
 JBehaveDemo\GoogleSteps.class
+JBehaveDemo\LoginCorrectTest.class
+JBehaveDemo\DeleteCarTest.class
+JBehaveDemo\SearchRunTest.class
+JBehaveDemo\SearchEmptyTest.class
+JBehaveDemo\LoginInCorrectTest.class
 JBehaveDemo\GoogleTest.class
+JBehaveDemo\ShowDetailsTest.class

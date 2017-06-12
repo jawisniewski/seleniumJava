@@ -14,7 +14,7 @@ public class PageObject {
     public  List<WebElement> tr;
     public PageObject(WebDriver driver){
         this.driver = driver;
-        driver.get("http://localhost:3000/login");
+        driver.get("https://firmatransportowa.herokuapp.com/login");
         wait = new WebDriverWait(driver,10);
     }
 
@@ -27,7 +27,7 @@ public class PageObject {
         driver.findElement(By.id("password")).sendKeys(password);
      ;
         WebElement btn = driver.findElement(By.id("submit"));
-        btn.click();
+        btn.submit();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("logged")));
 
     }
@@ -35,7 +35,7 @@ public class PageObject {
 public  int assertTrSize (String name) throws  Exception {
 
 
-    driver.get("http://127.0.0.1:3000/runs");
+    driver.get("https://firmatransportowa.herokuapp.com/runs");
     wait.until(ExpectedConditions.presenceOfElementLocated(By.id("search")));
     WebElement login = driver.findElement(By.id("search"));
     login.sendKeys(name);

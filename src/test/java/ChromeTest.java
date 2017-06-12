@@ -49,7 +49,7 @@ public class ChromeTest {
     @Test
     public void searchTest() throws Exception {
 
-        driver.get("http://127.0.0.1:3000/runs");
+        driver.get("https://firmatransportowa.herokuapp.com/runs");
 
         WebElement login = driver.findElement(By.id("search"));
         login.sendKeys("pol-eng");
@@ -64,7 +64,7 @@ public class ChromeTest {
     @Test
     public void searchInCorrectTest() throws Exception {
 
-        driver.get("http://127.0.0.1:3000/runs");
+        driver.get("https://firmatransportowa.herokuapp.com/runs");
 
         WebElement login = driver.findElement(By.id("search"));
         login.sendKeys("Anglia");
@@ -79,7 +79,7 @@ public class ChromeTest {
     @Test
     public void searchEmptyTest() throws Exception{
 
-        driver.get("http://127.0.0.1:3000/runs");
+        driver.get("https://firmatransportowa.herokuapp.com/runs");
 
         WebElement login = driver.findElement(By.id("search"));
         login.sendKeys("");
@@ -97,7 +97,7 @@ public class ChromeTest {
         pageLogin.login("admin", "123qwe");
         Integer size1 = pageLogin.assertTrSize("pol-fr");
 
-        driver.get("http://localhost:3000/runs/new");
+        driver.get("https://firmatransportowa.herokuapp.com/runs/new");
 
         List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
         formcontrol.get(0).sendKeys("pol-fr");
@@ -167,7 +167,7 @@ public class ChromeTest {
         pageLogin = new PageObject(driver);
         pageLogin.login("admin", "123qwe");
 
-        pageLogin.DeleteRow(5);
+        pageLogin.DeleteRow(0);
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
         assertTrue(driver.findElement(By.id("notice")).getText().equals(""));
@@ -178,7 +178,7 @@ public class ChromeTest {
     public void FormCreateTest()  throws Exception{
         pageLogin = new PageObject(driver);
         pageLogin.login("admin", "123qwe");
-        driver.get("http://localhost:3000/runs/new");
+        driver.get("https://firmatransportowa.herokuapp.com/runs/new");
 
         List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
         formcontrol.get(0).sendKeys("pol-fr");
@@ -190,13 +190,13 @@ public class ChromeTest {
         WebElement form = driver.findElement(By.tagName("form"));
         form.submit();
 
-        assertFalse(driver.getCurrentUrl().equals("http://127.0.0.1:3000/runs/new"));
+        assertFalse(driver.getCurrentUrl().equals("https://firmatransportowa.herokuapp.com/runs/new"));
     }
     @Test
     public void FormFailCreateTest()  throws Exception{
         pageLogin = new PageObject(driver);
         pageLogin.login("admin", "123qwe");
-        driver.get("http://localhost:3000/runs/new");
+        driver.get("https://firmatransportowa.herokuapp.com/runs/new");
 
         List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
         formcontrol.get(0).sendKeys("");

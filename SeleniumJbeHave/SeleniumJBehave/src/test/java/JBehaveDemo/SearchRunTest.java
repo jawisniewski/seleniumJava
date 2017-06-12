@@ -11,7 +11,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  * Created by Hebo on 12.06.2017.
@@ -20,29 +23,38 @@ public class SearchRunTest {
     private WebDriverProvider driver;
     private WebElement q;
     private Wait<WebDriver> wait;
-
+    List<WebElement> tr;
     public SearchRunTest(WebDriverProvider driver){
         super();
         this.driver = driver;
     }
 
-    @Given("google test site")
-    public void givenGoogleTestSite(){
-        driver.get().get("https://www.google.co.in");
-        wait = new WebDriverWait(driver.get(), 10);
+    @Given("Szukam trasy $search")
+    public void givensearch(String search){
+        driver.get().get("https://firmatransportowa.herokuapp.com/runs");
+
+        WebElement login = driver.get().findElement(By.id("search"));
+        login.sendKeys("pol-eng");
+
+        WebElement form = driver.get().findElement(By.tagName("form"));
+        form.submit();
+        WebElement tbody = driver.get().findElement(By.tagName("tbody"));
+        List<WebElement> tr = tbody.findElements(By.tagName("tr"));
+
+
     }
 
-    @When("I send keys Mateusz Miotk")
-    public void whenISendKeysMateuszMiotk(){
-        q = driver.get().findElement(By.name("q"));
-        q.sendKeys("Mateusz Miotk");
-        q.submit();
+    @When("klikne na szukaj wynikow")
+    public void whenClick(){
+        WebElement form = driver.get().findElement(By.tagName("form"));
+        form.submit();
+        WebElement tbody = driver.get().findElement(By.tagName("tbody"));
+        tr = tbody.findElements(By.tagName("tr"));
         wait.until(ExpectedConditions.titleContains("Mateusz Miotk"));
     }
 
-    @Then("title of page is equal Mateusz Miotk - Szukaj w google")
-    public void thenTitleOfPageIsEqualMateuszMiotkSzukajWGoogle(){
-        assertEquals(driver.get().getTitle(), "Mateusz Miotk - Szukaj w Google");
-        driver.get().close();
+    @Then("lista wynikow bedzie zawierac rekordy")
+    public void thenListaNotEmpty(){
+        assertNotEquals(0,tr.size());
     }
 }

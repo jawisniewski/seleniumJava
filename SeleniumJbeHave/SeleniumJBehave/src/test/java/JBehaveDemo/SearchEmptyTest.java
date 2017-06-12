@@ -26,13 +26,13 @@ public class SearchEmptyTest {
         this.driver = driver;
     }
 
-    @Given("google test site")
+    @Given("Szukam rzeczy ktora nie istnieje")
     public void givenGoogleTestSite(){
         driver.get().get("https://www.google.co.in");
         wait = new WebDriverWait(driver.get(), 10);
     }
 
-    @When("I send keys Mateusz Miotk")
+    @When("klikne na szukaj")
     public void whenISendKeysMateuszMiotk(){
         q = driver.get().findElement(By.name("q"));
         q.sendKeys("Mateusz Miotk");
@@ -40,7 +40,7 @@ public class SearchEmptyTest {
         wait.until(ExpectedConditions.titleContains("Mateusz Miotk"));
     }
 
-    @Then("title of page is equal Mateusz Miotk - Szukaj w google")
+    @Then("lista wynikow bedzie pusta")
     public void thenTitleOfPageIsEqualMateuszMiotkSzukajWGoogle(){
         assertEquals(driver.get().getTitle(), "Mateusz Miotk - Szukaj w Google");
         driver.get().close();

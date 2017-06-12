@@ -2,34 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cad4e91-3ba5-4e07-ba04-10b10491cfbc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/DeleteCar.story" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/DeleteCarTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/LoginCorrectTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/LoginInCorrectTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/SearchEmptyTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/SearchRunTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/ShowDetailsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/loginCorrect.story" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/loginInCorrect.story" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/searchEmpty.story" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/searchRun.story" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/showDetails.story" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/google_test.story" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/test-classes/JBehaveDemo/GoogleTest.class" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/test-classes/JBehaveDemo/GoogleTest.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/classes/google_test.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.stats" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/storyDurations.props" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.stats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.txt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/test-classes/chromedriver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/test-classes/google_test.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/ChromeTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/Command line suite/Command line test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/EdgeTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/MozillaTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/OperaTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ChromeTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-EdgeTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-MozillaTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-OperaTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestJava.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TestJava.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/Command line test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/groups.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-alphabetical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods-not-run.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/methods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/reporter-output.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/testng.xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Command line suite/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ChromeTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ChromeTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/EdgeTest.class" afterPath="$PROJECT_DIR$/target/test-classes/EdgeTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/MozillaTest.class" afterPath="$PROJECT_DIR$/target/test-classes/MozillaTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/OperaTest.class" afterPath="$PROJECT_DIR$/target/test-classes/OperaTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/PageObject.class" afterPath="$PROJECT_DIR$/target/test-classes/PageObject.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/.idea/workspace.xml" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/GoogleTest.java" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/GoogleTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/GoogleSteps.java" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/GoogleSteps.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/LoginCorrectTest.java" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/LoginCorrectTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/LoginInCorrectTest.java" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/LoginInCorrectTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/SearchEmptyTest.java" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/SearchEmptyTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/SearchRunTest.java" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/SearchRunTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/ShowDetailsTest.java" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/ShowDetailsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/loginCorrect.story" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/loginCorrect.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/loginInCorrect.story" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/loginInCorrect.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/searchEmpty.story" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/searchEmpty.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/searchRun.story" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/searchRun.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/showDetails.story" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/showDetails.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/AfterStories.stats" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/AfterStories.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/BeforeStories.stats" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/BeforeStories.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.stats" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.txt" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/storyDurations.props" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/storyDurations.props" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/AfterStories.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/BeforeStories.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.stats.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.txt.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.txt.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/reports.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/surefire-reports/JBehaveDemo.GoogleTest.txt" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/surefire-reports/JBehaveDemo.GoogleTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/surefire-reports/TEST-JBehaveDemo.GoogleTest.xml" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/surefire-reports/TEST-JBehaveDemo.GoogleTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ChromeTest.java" afterPath="$PROJECT_DIR$/src/test/java/ChromeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/EdgeTest.java" afterPath="$PROJECT_DIR$/src/test/java/EdgeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MozillaTest.java" afterPath="$PROJECT_DIR$/src/test/java/MozillaTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/OperaTest.java" afterPath="$PROJECT_DIR$/src/test/java/OperaTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/PageObject.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +119,8 @@
       <file leaf-file-name="OperaTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/OperaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="194">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +131,8 @@
       <file leaf-file-name="EdgeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/EdgeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="521">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,8 +143,8 @@
       <file leaf-file-name="PageObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="45" column="1" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+            <state relative-caret-position="549">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,8 +153,8 @@
       <file leaf-file-name="ChromeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ChromeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="245">
+              <caret line="61" column="34" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="61" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,8 +165,8 @@
       <file leaf-file-name="MozillaTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MozillaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="30" column="37" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="160">
+              <caret line="28" column="76" lean-forward="false" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,15 +206,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/PageObject.java" />
         <option value="$PROJECT_DIR$/../../SeleniumJBehaveExample/src/test/java/JBehaveDemo/GoogleTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MozillaTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/OperaTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/EdgeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ChromeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestJava.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="C:/SeleniumJBehaveExample/src/test/java/JBehaveDemo/GoogleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EdgeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MozillaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/OperaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ChromeTest.java" />
       </list>
     </option>
   </component>
@@ -308,7 +362,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestJava">
+  <component name="RunManager" selected="JUnit.ChromeTest">
+    <configuration default="false" name="EdgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="seleniumP" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EdgeTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="seleniumP" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChromeTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="MozillaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="seleniumP" />
@@ -351,15 +447,15 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EdgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="OperaTest.EditRunTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="seleniumP" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EdgeTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="OperaTest" />
+      <option name="METHOD_NAME" value="EditRunTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -370,55 +466,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestJava" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="seleniumP" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestJava" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestJava" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="seleniumP" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestJava" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -809,19 +856,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MozillaTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.OperaTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EdgeTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestJava" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.TestJava" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.EdgeTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ChromeTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MozillaTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.OperaTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.OperaTest.EditRunTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestJava" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestJava" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EdgeTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ChromeTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MozillaTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.OperaTest.EditRunTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.OperaTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MozillaTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EdgeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -837,44 +884,44 @@
       <updated>1497128432709</updated>
       <workItem from="1497128446598" duration="831000" />
       <workItem from="1497174256169" duration="70000" />
-      <workItem from="1497174350640" duration="20848000" />
+      <workItem from="1497174350640" duration="23471000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EdgeTest - 2017.06.11 at 21h 52m 56s.xml">
+    <history-entry file="ChromeTest - 2017.06.12 at 20h 50m 22s.xml">
+      <configuration name="ChromeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChromeTest - 2017.06.12 at 20h 57m 18s.xml">
+      <configuration name="ChromeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChromeTest_FormCreateTest - 2017.06.12 at 20h 49m 10s.xml">
+      <configuration name="ChromeTest.FormCreateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EdgeTest - 2017.06.12 at 20h 51m 20s.xml">
       <configuration name="EdgeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeTest - 2017.06.11 at 21h 59m 34s.xml">
+    <history-entry file="EdgeTest - 2017.06.12 at 20h 52m 38s.xml">
       <configuration name="EdgeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeTest - 2017.06.11 at 22h 00m 02s.xml">
-      <configuration name="EdgeTest" configurationId="JUnit" />
+    <history-entry file="MozillaTest - 2017.06.12 at 20h 53m 23s.xml">
+      <configuration name="MozillaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeTest - 2017.06.11 at 22h 01m 02s.xml">
-      <configuration name="EdgeTest" configurationId="JUnit" />
+    <history-entry file="MozillaTest - 2017.06.12 at 20h 54m 35s.xml">
+      <configuration name="MozillaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeTest - 2017.06.11 at 22h 03m 49s.xml">
-      <configuration name="EdgeTest" configurationId="JUnit" />
+    <history-entry file="MozillaTest - 2017.06.12 at 20h 56m 18s.xml">
+      <configuration name="MozillaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeTest - 2017.06.11 at 22h 04m 53s.xml">
-      <configuration name="EdgeTest" configurationId="JUnit" />
+    <history-entry file="OperaTest - 2017.06.12 at 20h 55m 39s.xml">
+      <configuration name="OperaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EdgeTest - 2017.06.11 at 22h 06m 26s.xml">
-      <configuration name="EdgeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EdgeTest - 2017.06.11 at 22h 08m 07s.xml">
-      <configuration name="EdgeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestJava - 2017.06.11 at 22h 09m 04s.xml">
-      <configuration name="TestJava" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestJava - 2017.06.12 at 15h 01m 11s.xml">
-      <configuration name="TestJava" configurationId="TestNG" />
+    <history-entry file="OperaTest_EditRunTest - 2017.06.12 at 20h 55m 56s.xml">
+      <configuration name="OperaTest.EditRunTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21749000" />
+    <option name="totallyTimeSpent" value="24372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -890,7 +937,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -919,20 +966,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/test/java/MozillaTest.java</url>
-          <line>20</line>
-          <properties field="pageLogin" class="MozillaTest" />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/MozillaTest.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
@@ -1026,46 +1059,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EdgeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestClas.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="45" column="1" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MozillaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="30" column="37" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1075,16 +1072,6 @@
         <state relative-caret-position="357">
           <caret line="48" column="53" lean-forward="true" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/OperaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,10 +1099,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EdgeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MozillaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="28" column="76" lean-forward="false" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/OperaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ChromeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="245">
+          <caret line="61" column="34" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="61" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
