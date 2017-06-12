@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cad4e91-3ba5-4e07-ba04-10b10491cfbc" name="Default" comment="" />
+    <list default="true" id="9cad4e91-3ba5-4e07-ba04-10b10491cfbc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/DeleteCar.story" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/DeleteCarTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/LoginCorrectTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/LoginInCorrectTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/SearchEmptyTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/SearchRunTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/ShowDetailsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/loginCorrect.story" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/loginInCorrect.story" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/searchEmpty.story" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/searchRun.story" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/showDetails.story" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/google_test.story" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/test-classes/JBehaveDemo/GoogleTest.class" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/test-classes/JBehaveDemo/GoogleTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/.idea/workspace.xml" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/GoogleTest.java" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/src/test/java/JBehaveDemo/GoogleTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/AfterStories.stats" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/AfterStories.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/BeforeStories.stats" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/BeforeStories.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.stats" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.txt" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/google_test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/storyDurations.props" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/storyDurations.props" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/AfterStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/BeforeStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.stats.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.txt.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/google_test.txt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/SeleniumJbeHave/SeleniumJBehave/target/jbehave/view/reports.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ChromeTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
-              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="36" />
+              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -808,7 +837,7 @@
       <updated>1497128432709</updated>
       <workItem from="1497128446598" duration="831000" />
       <workItem from="1497174256169" duration="70000" />
-      <workItem from="1497174350640" duration="20205000" />
+      <workItem from="1497174350640" duration="20848000" />
     </task>
     <servers />
   </component>
@@ -845,7 +874,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21106000" />
+    <option name="totallyTimeSpent" value="21749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1086,7 +1115,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ChromeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="36" />
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

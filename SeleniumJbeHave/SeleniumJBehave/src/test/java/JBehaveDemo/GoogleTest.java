@@ -13,10 +13,8 @@ import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.Keywords;
 import org.jbehave.core.i18n.LocalizedKeywords;
 import org.jbehave.core.io.LoadFromClasspath;
-import org.jbehave.core.io.LoadFromURL;
 import org.jbehave.core.io.StoryFinder;
 import org.jbehave.core.junit.JUnitStories;
-import org.jbehave.core.parsers.RegexStoryParser;
 import org.jbehave.core.reporters.Format;
 import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
@@ -41,28 +39,25 @@ public class GoogleTest extends JUnitStories {
     private WebDriverSteps lifecycleSteps = new PerStoryWebDriverSteps(driverProvider); // or PerStoryWebDriverSteps(driverProvider)
     private SeleniumContext context = new SeleniumContext();
     private ContextView contextView = new LocalFrameContextView().sized(500, 100);
-
     public GoogleTest() {
     	System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 	}
 
 	@Override
     public Configuration configuration() {
-        Keywords keywords = new LocalizedKeywords(new Locale("pl"));
+
         Class<? extends Embeddable> embeddableClass = this.getClass();
         return new SeleniumConfiguration()
-
                 .useSeleniumContext(context)
-                .useWebDriverProvider(driverProvider).useKeywords(keywords)
-                .useStepMonitor(new SeleniumStepMonitor(contextView, context, new SilentStepMonitor())).useKeywords(keywords)
-                .useStoryLoader(new LoadFromClasspath(embeddableClass)).useKeywords(keywords)
+                .useWebDriverProvider(driverProvider)
+                .useStepMonitor(new SeleniumStepMonitor(contextView, context, new SilentStepMonitor()))
+                .useStoryLoader(new LoadFromClasspath(embeddableClass))
                 .useStoryReporterBuilder(new StoryReporterBuilder()
                     .withCodeLocation(codeLocationFromClass(embeddableClass))
                     .withDefaultFormats()
-                    .withFormats(Format.CONSOLE, Format.TXT)
-                        .withKeywords(keywords))
-                .useKeywords(keywords).useStoryParser(new RegexStoryParser(keywords));
+                    .withFormats(Format.CONSOLE, Format.TXT))
 
+                ;
     }
 
     @Override
