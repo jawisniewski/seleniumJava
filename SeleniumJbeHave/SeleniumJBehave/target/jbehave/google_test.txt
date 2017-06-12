@@ -1,0 +1,19 @@
+
+(google_test.story)
+Scenariusz: Sample story
+
+Narrative:
+I want to use BDD and Selenium WebDriver
+					 
+Scenario:  Google test
+Given google test site
+When I send keys Mateusz Miotk
+Then title of page is equal Mateusz Miotk - Szukaj w google (PENDING)
+@And("want to use BDD and Selenium WebDriver\n\t\t\t\t\t \nScenario:  Google test\nGiven google test site\nWhen I send keys Mateusz Miotk\nThen title of page is equal Mateusz Miotk - Szukaj w google")
+@Pending
+public void andWantToUseBDDAndSeleniumWebDriverScenarioGoogleTestGivenGoogleTestSiteWhenISendKeysMateuszMiotkThenTitleOfPageIsEqualMateuszMiotkSzukajWGoogle() {
+  // PENDING
+}
+
+
+

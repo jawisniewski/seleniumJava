@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Jun 12 19:46:50 CEST 2017
+google_test.story=4000
+threads=1
+total=4000
+threadAverage=4000
