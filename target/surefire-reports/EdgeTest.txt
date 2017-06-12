@@ -1,12 +1,13 @@
 -------------------------------------------------------------------------------
-Test set: TestJava
+Test set: EdgeTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 44.708 sec <<< FAILURE!
-EditRunTest(TestJava)  Time elapsed: 10.996 sec  <<< ERROR!
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
-	at TestJava.EditRunTest(TestJava.java:127)
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.046 sec <<< FAILURE!
+loginInCorrect(EdgeTest)  Time elapsed: 13.945 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: login (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at PageObject.login(PageObject.java:23)
+	at EdgeTest.loginInCorrect(EdgeTest.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -38,4 +39,17 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.name: login
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-LC2B6VO', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 33 more
 

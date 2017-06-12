@@ -32,19 +32,18 @@ public class EdgeTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @Test
-    public void loginInCorrect() throws Exception {
-        pageLogin = new PageObject(driver);
-        pageLogin.login("admin", "123qe");
-        assertEquals("Błedny login lub haslo", driver.findElement(By.id("notice")).getText());
-    }
-    @Test
     public void loginCorrect() throws Exception {
         pageLogin = new PageObject(driver);
         pageLogin.login("admin", "123qwe");
         assertTrue(pageLogin.assertLogged("Hello!"));
 
     }
-
+    @Test
+    public void loginInCorrect() throws Exception {
+        pageLogin = new PageObject(driver);
+        pageLogin.login("admin", "123qe");
+        assertEquals("Bledny login lub haslo", driver.findElement(By.id("notice")).getText());
+    }
     @Test
     public void searchEmptyTest() throws Exception{
 
@@ -83,24 +82,7 @@ public class EdgeTest {
     }
 
 
-    @Test
-    public void FormCreateTest()  throws Exception{
-        pageLogin = new PageObject(driver);
-        pageLogin.login("admin", "123qwe");
-        driver.get("http://localhost:3000/runs/new");
 
-        List< WebElement> formcontrol = driver.findElements(By.className("form-control"));
-        formcontrol.get(0).sendKeys("pol-fr");
-        formcontrol.get(1).sendKeys("2000");
-        formcontrol.get(2).sendKeys("2000");
-
-        Select car =  new Select (driver.findElement(By.id("run_cars_id")));
-        car.selectByIndex(1);
-        WebElement form = driver.findElement(By.tagName("form"));
-        form.submit();
-
-        assertFalse(driver.getCurrentUrl().equals("http://127.0.0.1:3000/runs/new"));
-    }
 
 //
 //        @Test

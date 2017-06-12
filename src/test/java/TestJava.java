@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
+import org.testng.annotations.Parameters;
 import static org.junit.Assert.*;
 
 /**
@@ -41,7 +41,7 @@ public class TestJava {
     public void loginInCorrect() throws Exception {
         pageLogin = new PageObject(driver);
         pageLogin.login("admin", "123qe");
-        assertEquals("Błedny login lub haslo", driver.findElement(By.id("notice")).getText());
+        assertEquals("Bledny login lub haslo", driver.findElement(By.id("notice")).getText());
     }
     @Test
     public void loginCorrect() throws Exception {

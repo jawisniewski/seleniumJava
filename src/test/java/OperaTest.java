@@ -39,7 +39,7 @@ public class OperaTest {
     public void loginInCorrect() throws Exception {
         pageLogin = new PageObject(driver);
         pageLogin.login("admin", "123qe");
-        assertEquals("Błedny login lub haslo", driver.findElement(By.id("notice")).getText());
+        assertEquals("Bledny login lub haslo", driver.findElement(By.id("notice")).getText());
     }
     @Test
     public void loginCorrect() throws Exception {
