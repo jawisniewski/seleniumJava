@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: OperaTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.345 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.438 sec
